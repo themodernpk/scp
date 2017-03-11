@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF" >
+
+    <View 
+        android:id="@+id/view_green_top"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#0cc59f"/>
+    <TextView 
+        android:id="@+id/tv_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#a2a2a4"
+        android:textSize="20sp"
+        android:text="Delhi/NCR"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"/>
+
+    <ImageView
+        android:id="@+id/iv_item"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:layerType="software" />
+    
+    <View 
+        android:id="@+id/view_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#ebebeb"
+        android:layout_alignParentBottom="true"/>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/tv_item"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="18dp" />
+
+</RelativeLayout>

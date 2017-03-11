@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <com.nirhart.parallaxscroll.views.ParallaxExpandableListView
+            android:id="@+id/exp_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null"
+            android:groupIndicator="@null" >
+        </com.nirhart.parallaxscroll.views.ParallaxExpandableListView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+<!--     <View -->
+<!--         android:id="@+id/view1" -->
+<!--         android:layout_width="1dp" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:layout_alignParentLeft="true" -->
+<!--         android:layout_alignParentTop="true" -->
+<!--         android:layout_marginLeft="30dp" -->
+<!--         android:background="#ededed" /> -->
+
+<!--     <TextView -->
+<!--         android:id="@+id/tv_empty" -->
+<!--         android:layout_width="match_parent" -->
+<!--         android:layout_height="100dp" -->
+<!--         android:gravity="center" -->
+<!--         android:text="No List Items" -->
+<!--         android:textColor="#979799" -->
+<!--         android:textSize="20sp" /> -->
+
+</LinearLayout>

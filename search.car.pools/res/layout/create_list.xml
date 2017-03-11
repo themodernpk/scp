@@ -1,0 +1,1230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.example.search.car.pools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/l_search_1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_sec_city_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="fonts/AvenirLTStd_Book.otf"
+            android:gravity="center"
+            android:text="Your Carpooling Requirement"
+            android:textColor="#27272f"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/viewTop"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e9e9e9" />
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp" >
+
+            <!-- android:scrollbarThumbVertical="@android:color/holo_blue_bright" -->
+
+            <LinearLayout
+                android:id="@+id/scroll_l"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/dgdf"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:id="@+id/dgdf"
+                        android:layout_width="fill_parent"
+                        android:layout_height="95dp"
+                        android:paddingLeft="15dp" >
+
+                        <View
+                            android:id="@+id/view1"
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignBottom="@+id/view2"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="20dp"
+                            android:background="#ededed" />
+
+                        <View
+                            android:id="@+id/view2"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignLeft="@+id/tv_1_create_list"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="8dp"
+                            android:background="#ededed" />
+
+                        <ImageView
+                            android:id="@+id/iv_1_radio"
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="15dp"
+                            android:src="@drawable/blue_circle_small" />
+
+                        <TextView
+                            android:id="@+id/tv_1_create_list"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@+id/iv_1_radio"
+                            android:fontFamily="fonts/AvenirLTStd_Book.otf"
+                            android:text="I am a :"
+                            android:textAllCaps="true"
+                            android:textColor="#0087ca"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <RadioGroup
+                            android:id="@+id/rg_carpool"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@+id/tv_1_create_list"
+                            android:layout_below="@+id/tv_1_create_list"
+                            android:layout_marginTop="5dp"
+                            android:orientation="vertical" >
+
+                            <RadioButton
+                                android:id="@+id/radio0"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:button="@drawable/custom_radio_button"
+                                android:checked="true"
+                                android:fontFamily="fonts/AvenirLTStd_Book.otf"
+                                android:paddingLeft="10dp"
+                                android:text="Carpool Seeker"
+                                android:textColor="#27272f" />
+
+                            <RadioButton
+                                android:id="@+id/radio1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:button="@drawable/custom_radio_button"
+                                android:fontFamily="fonts/AvenirLTStd_Book.otf"
+                                android:paddingLeft="10dp"
+                                android:text="Carpool Provider"
+                                android:textColor="#27272f" />
+                        </RadioGroup>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/dgdf"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:id="@+id/dgdf"
+                        android:layout_width="fill_parent"
+                        android:layout_height="65dp"
+                        android:paddingLeft="15dp" >
+
+                        <View
+                            android:id="@+id/view1"
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignBottom="@+id/view2"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="20dp"
+                            android:background="#ededed" />
+
+                        <View
+                            android:id="@+id/view2"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignLeft="@+id/l_city_create_list"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginRight="20dp"
+                            android:background="#ededed" />
+
+                        <ImageView
+                            android:id="@+id/iv_2"
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="15dp"
+                            android:src="@drawable/blue_circle_small"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/iv_02"
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="25dp"
+                            android:src="@drawable/grey_circle" />
+
+                        <RelativeLayout
+                            android:id="@+id/l_city_create_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="45dp"
+                            android:layout_toRightOf="@+id/view1" >
+
+                            <TextView
+                                android:id="@+id/tv_2_create_list"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:fontFamily="fonts/AvenirLTStd_Book.otf"
+                                android:text="select city"
+                                android:textAllCaps="true"
+                                android:textColor="#0087ca"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:visibility="gone" />
+
+                            <TextView
+                                android:id="@+id/tv_c_sec_city"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tv_2_create_list"
+                                android:fontFamily="fonts/AvenirLTStd_Book.otf"
+                                android:text="Select City"
+                                android:textColor="#000000"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:id="@+id/imageView1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBottom="@+id/tv_c_sec_city"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="40dp"
+                                android:src="@drawable/drop_down" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/dgdf"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:id="@+id/dgdf"
+                        android:layout_width="fill_parent"
+                        android:layout_height="95dp"
+                        android:paddingLeft="15dp" >
+
+                        <View
+                            android:id="@+id/view1"
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignBottom="@+id/view2"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="20dp"
+                            android:background="#ededed" />
+
+                        <View
+                            android:id="@+id/view2"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignLeft="@+id/tv_3_create_list"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="8dp"
+                            android:background="#ededed" />
+
+                        <ImageView
+                            android:id="@+id/iv_3_radio"
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="15dp"
+                            android:src="@drawable/blue_circle_small" />
+
+                        <TextView
+                            android:id="@+id/tv_3_create_list"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@+id/iv_3_radio"
+                            android:fontFamily="fonts/AvenirLTStd_Book.otf"
+                            android:text="carpool type"
+                            android:textAllCaps="true"
+                            android:textColor="#0087ca"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <RadioGroup
+                            android:id="@+id/rg_carpool_type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@+id/tv_3_create_list"
+                            android:layout_below="@+id/tv_3_create_list"
+                            android:layout_marginTop="5dp"
+                            android:orientation="vertical" >
+
+                            <RadioButton
+                                android:id="@+id/radio3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:button="@drawable/custom_radio_button"
+                                android:checked="true"
+                                android:fontFamily="fonts/AvenirLTStd_Book.otf"
+                                android:paddingLeft="10dp"
+                                android:text="Normal"
+                                android:textColor="#27272f" />
+
+                            <RadioButton
+                                android:id="@+id/radio4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:button="@drawable/custom_radio_button"
+                                android:fontFamily="fonts/AvenirLTStd_Book.otf"
+                                android:paddingLeft="10dp"
+                                android:text="Corporate"
+                                android:textColor="#27272f" />
+                        </RadioGroup>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/l1_select_company"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:id="@+id/dgdf"
+                        android:layout_width="fill_parent"
+                        android:layout_height="65dp"
+                        android:paddingLeft="15dp" >
+
+                        <View
+                            android:id="@+id/view1"
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignBottom="@+id/view2"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="20dp"
+                            android:background="#ededed" />
+
+                        <View
+                            android:id="@+id/view2"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignLeft="@+id/l_company_create_list"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginRight="20dp"
+                            android:background="#ededed" />
+
+                        <ImageView
+                            android:id="@+id/iv_04"
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="25dp"
+                            android:src="@drawable/grey_circle" />
+
+                        <ImageView
+                            android:id="@+id/iv_4"
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="15dp"
+                            android:src="@drawable/blue_circle_small"
+                            android:visibility="gone" />
+
+                        <RelativeLayout
+                            android:id="@+id/l_company_create_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="45dp"
+                            android:layout_toRightOf="@+id/view1" >
+
+                            <TextView
+                                android:id="@+id/tv_4_create_list"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_toRightOf="@+id/iv_4"
+                                android:fontFamily="fonts/AvenirLTStd_Book.otf"
+                                android:text="select company"
+                                android:textAllCaps="true"
+                                android:textColor="#0087ca"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:visibility="gone" />
+
+                            <TextView
+                                android:id="@+id/tv_sec_company"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_below="@+id/tv_4_create_list"
+                                android:layout_toLeftOf="@+id/imageView1"
+                                android:fontFamily="fonts/AvenirLTStd_Book.otf"
+                                android:gravity="center_vertical"
+                                android:singleLine="true"
+                                android:text="Select Company"
+                                android:textColor="#000000"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:id="@+id/imageView1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBottom="@+id/tv_sec_company"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="40dp"
+                                android:src="@drawable/drop_down" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/l1_dfgselect_company"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:id="@+id/dgdf"
+                        android:layout_width="fill_parent"
+                        android:layout_height="65dp"
+                        android:paddingLeft="15dp" >
+
+                        <View
+                            android:id="@+id/view1"
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignBottom="@+id/view2"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="20dp"
+                            android:background="#ededed" />
+
+                        <View
+                            android:id="@+id/view2"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignLeft="@+id/l_category_create_list"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginRight="20dp"
+                            android:background="#ededed" />
+
+                        <ImageView
+                            android:id="@+id/iv_05"
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="25dp"
+                            android:src="@drawable/grey_circle" />
+
+                        <ImageView
+                            android:id="@+id/iv_5"
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="15dp"
+                            android:src="@drawable/blue_circle_small"
+                            android:visibility="gone" />
+
+                        <RelativeLayout
+                            android:id="@+id/l_category_create_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="45dp"
+                            android:layout_toRightOf="@+id/view1" >
+
+                            <TextView
+                                android:id="@+id/tv_5_create_list"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:text="select category"
+                                android:textAllCaps="true"
+                                android:textColor="#0087ca"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:visibility="gone" />
+
+                            <TextView
+                                android:id="@+id/tv_sec_category"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tv_5_create_list"
+                                android:fontFamily="fonts/AvenirLTStd_Book.otf"
+                                android:gravity="center_vertical"
+                                android:text="Select Category"
+                                android:textColor="#000000"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:id="@+id/imageView1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBottom="@+id/tv_sec_category"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="40dp"
+                                android:src="@drawable/drop_down" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/dgdf"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:id="@+id/dgdf"
+                        android:layout_width="fill_parent"
+                        android:layout_height="65dp"
+                        android:paddingLeft="15dp" >
+
+                        <View
+                            android:id="@+id/view1"
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignBottom="@+id/view2"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="20dp"
+                            android:background="#ededed" />
+
+                        <View
+                            android:id="@+id/view2"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignLeft="@+id/fl1"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginRight="20dp"
+                            android:background="#ededed" />
+
+                        <ImageView
+                            android:id="@+id/iv_6"
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="25dp"
+                            android:src="@drawable/grey_circle" />
+
+                        <com.example.search.car.pools.FloatLabelLayout
+                            android:id="@+id/fl1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="38dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@+id/iv_6"
+                            app:floatLabelTextAppearance="@style/TextAppearance.FLL.FloatLabel.BlueTextCreateAdd" >
+
+                            <EditText
+                                android:id="@+id/et_title"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#00000000"
+                                android:hint="TITLE"
+                                android:inputType="textPersonName|textCapSentences"
+                                android:paddingLeft="2.5dp"
+                                android:textColor="#27272f"
+                                android:textCursorDrawable="@drawable/cursor_color"
+                                android:textSize="16sp" />
+                        </com.example.search.car.pools.FloatLabelLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/dgdf"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:id="@+id/dgdf"
+                        android:layout_width="fill_parent"
+                        android:layout_height="65dp"
+                        android:paddingLeft="15dp" >
+
+                        <View
+                            android:id="@+id/view1"
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignBottom="@+id/view2"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="20dp"
+                            android:background="#ededed" />
+
+                        <View
+                            android:id="@+id/view2"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignLeft="@+id/fl2"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginRight="20dp"
+                            android:background="#ededed" />
+
+                        <ImageView
+                            android:id="@+id/iv_7"
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="25dp"
+                            android:src="@drawable/grey_circle" />
+
+                        <com.example.search.car.pools.FloatLabelLayout
+                            android:id="@+id/fl2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@+id/iv_7"
+                            app:floatLabelTextAppearance="@style/TextAppearance.FLL.FloatLabel.BlueTextCreateAdd" >
+
+                            <EditText
+                                android:id="@+id/et_description"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#00000000"
+                                android:hint="DESCRIPTION"
+                                android:inputType="textPersonName|textCapSentences"
+                                android:paddingLeft="2.5dp"
+                                android:textColor="#27272f"
+                                android:textCursorDrawable="@drawable/cursor_color"
+                                android:textSize="16sp" />
+                        </com.example.search.car.pools.FloatLabelLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/dgdf"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:id="@+id/dgdf"
+                        android:layout_width="fill_parent"
+                        android:layout_height="65dp"
+                        android:paddingLeft="15dp" >
+
+                        <View
+                            android:id="@+id/view1"
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignBottom="@+id/view2"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="20dp"
+                            android:background="#ededed" />
+
+                        <View
+                            android:id="@+id/view2"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignLeft="@+id/fl3"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginRight="20dp"
+                            android:background="#ededed" />
+
+                        <ImageView
+                            android:id="@+id/iv_8"
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="20dp"
+                            android:src="@drawable/grey_circle" />
+
+                        <ImageView
+                            android:id="@+id/iv_8_A"
+                            android:layout_width="17dp"
+                            android:layout_height="21dp"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_toRightOf="@+id/iv_8"
+                            android:layerType="software" />
+
+                        <ImageView
+                            android:id="@+id/iv_8_1"
+                            android:layout_width="4dp"
+                            android:layout_height="4dp"
+                            android:layout_alignLeft="@+id/iv_8_A"
+                            android:layout_below="@+id/iv_8_A"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="5dp"
+                            android:src="@drawable/blue_circle_small" />
+
+                        <ImageView
+                            android:id="@+id/iv_8_2"
+                            android:layout_width="4dp"
+                            android:layout_height="4dp"
+                            android:layout_alignLeft="@+id/iv_8_A"
+                            android:layout_below="@+id/iv_8_1"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="5dp"
+                            android:src="@drawable/blue_circle_small" />
+
+                        <!-- <ImageView -->
+                        <!-- android:id="@+id/iv_8_3" -->
+                        <!-- android:layout_width="4dp" -->
+                        <!-- android:layout_height="4dp" -->
+                        <!-- android:layout_alignLeft="@+id/iv_8_A" -->
+                        <!-- android:layout_below="@+id/iv_8_2" -->
+                        <!-- android:layout_marginLeft="6dp" -->
+                        <!-- android:layout_marginRight="20dp" -->
+                        <!-- android:layout_marginTop="5dp" -->
+                        <!-- android:src="@drawable/blue_circle_small" /> -->
+
+
+                        <!-- <ImageView -->
+                        <!-- android:id="@+id/iv_8_4" -->
+                        <!-- android:layout_width="4dp" -->
+                        <!-- android:layout_height="4dp" -->
+                        <!-- android:layout_alignLeft="@+id/iv_8_A" -->
+                        <!-- android:layout_below="@+id/iv_8_3" -->
+                        <!-- android:layout_marginLeft="6dp" -->
+                        <!-- android:layout_marginRight="20dp" -->
+                        <!-- android:layout_marginTop="5dp" -->
+                        <!-- android:src="@drawable/blue_circle_small" /> -->
+
+                        <com.example.search.car.pools.FloatLabelLayout
+                            android:id="@+id/fl3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@+id/iv_8_A"
+                            app:floatLabelTextAppearance="@style/TextAppearance.FLL.FloatLabel.BlueTextCreateAdd" >
+
+                            <EditText
+                                android:id="@+id/et_from"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#00000000"
+                                android:hint="FROM"
+                                android:inputType="textPersonName|textCapSentences"
+                                android:paddingLeft="1dp"
+                                android:textColor="#27272f"
+                                android:textCursorDrawable="@drawable/cursor_color"
+                                android:textSize="16sp" />
+                        </com.example.search.car.pools.FloatLabelLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/dgdf"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:id="@+id/dgdf"
+                        android:layout_width="fill_parent"
+                        android:layout_height="65dp"
+                        android:paddingLeft="15dp" >
+
+                        <View
+                            android:id="@+id/view1"
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignBottom="@+id/view2"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="20dp"
+                            android:background="#ededed" />
+
+                        <View
+                            android:id="@+id/view2"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignLeft="@+id/iv_9_B"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginRight="20dp"
+                            android:background="#ededed" />
+
+                        <ImageView
+                            android:id="@+id/iv_9"
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="20dp"
+                            android:src="@drawable/grey_circle" />
+
+                        <ImageView
+                            android:id="@+id/iv_9_B"
+                            android:layout_width="17dp"
+                            android:layout_height="21dp"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_toRightOf="@+id/iv_9"
+                            android:layerType="software" />
+
+                        <ImageView
+                            android:id="@+id/iv_9_1"
+                            android:layout_width="4dp"
+                            android:layout_height="4dp"
+                            android:layout_alignLeft="@+id/iv_9_B"
+                            android:layout_below="@+id/iv_9_A"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="2dp"
+                            android:src="@drawable/blue_circle_small" />
+
+                        <ImageView
+                            android:id="@+id/iv_9_2"
+                            android:layout_width="4dp"
+                            android:layout_height="4dp"
+                            android:layout_alignLeft="@+id/iv_9_B"
+                            android:layout_below="@+id/iv_9_1"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="5dp"
+                            android:src="@drawable/blue_circle_small" />
+
+                        <!-- <ImageView -->
+                        <!-- android:id="@+id/iv_9_3" -->
+                        <!-- android:layout_width="4dp" -->
+                        <!-- android:layout_height="4dp" -->
+                        <!-- android:layout_alignLeft="@+id/iv_9_B" -->
+                        <!-- android:layout_below="@+id/iv_9_2" -->
+                        <!-- android:layout_marginLeft="6dp" -->
+                        <!-- android:layout_marginRight="20dp" -->
+                        <!-- android:layout_marginTop="5dp" -->
+                        <!-- android:src="@drawable/blue_circle_small" /> -->
+
+
+                        <!-- <ImageView -->
+                        <!-- android:id="@+id/iv_9_4" -->
+                        <!-- android:layout_width="4dp" -->
+                        <!-- android:layout_height="4dp" -->
+                        <!-- android:layout_alignLeft="@+id/iv_9_B" -->
+                        <!-- android:layout_below="@+id/iv_9_3" -->
+                        <!-- android:layout_marginLeft="6dp" -->
+                        <!-- android:layout_marginRight="20dp" -->
+                        <!-- android:layout_marginTop="5dp" -->
+                        <!-- android:src="@drawable/blue_circle_small" /> -->
+
+                        <com.example.search.car.pools.FloatLabelLayout
+                            android:id="@+id/fl4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@+id/iv_9_B"
+                            app:floatLabelTextAppearance="@style/TextAppearance.FLL.FloatLabel.BlueTextCreateAdd" >
+
+                            <EditText
+                                android:id="@+id/et_to"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#00000000"
+                                android:hint="TO"
+                                android:inputType="textPersonName|textCapSentences"
+                                android:paddingLeft="2.5dp"
+                                android:textColor="#27272f"
+                                android:textCursorDrawable="@drawable/cursor_color"
+                                android:textSize="16sp" />
+                        </com.example.search.car.pools.FloatLabelLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/dgdf"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:id="@+id/dgdf"
+                        android:layout_width="fill_parent"
+                        android:layout_height="65dp"
+                        android:paddingLeft="15dp" >
+
+                        <View
+                            android:id="@+id/view1"
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignBottom="@+id/view2"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="20dp"
+                            android:background="#ededed" />
+
+                        <View
+                            android:id="@+id/view2"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignLeft="@+id/fl5"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginRight="20dp"
+                            android:background="#ededed" />
+
+                        <ImageView
+                            android:id="@+id/iv_10"
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="25dp"
+                            android:src="@drawable/grey_circle" />
+
+                        <com.example.search.car.pools.FloatLabelLayout
+                            android:id="@+id/fl5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@+id/iv_10"
+                            app:floatLabelTextAppearance="@style/TextAppearance.FLL.FloatLabel.BlueTextCreateAdd" >
+
+                            <EditText
+                                android:id="@+id/et_route"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#00000000"
+                                android:hint="ROUTE"
+                                android:inputType="textPersonName|textCapSentences"
+                                android:paddingLeft="2.5dp"
+                                android:textColor="#27272f"
+                                android:textCursorDrawable="@drawable/cursor_color"
+                                android:textSize="16sp" />
+                        </com.example.search.car.pools.FloatLabelLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/dgdf"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:id="@+id/dgdf"
+                        android:layout_width="fill_parent"
+                        android:layout_height="65dp"
+                        android:paddingLeft="15dp" >
+
+                        <View
+                            android:id="@+id/view1"
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignBottom="@+id/view2"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="20dp"
+                            android:background="#ededed" />
+
+                        <View
+                            android:id="@+id/view2"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignLeft="@+id/l_seats_create_list"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginRight="20dp"
+                            android:background="#ededed" />
+
+                        <ImageView
+                            android:id="@+id/iv_011"
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="25dp"
+                            android:src="@drawable/grey_circle" />
+
+                        <ImageView
+                            android:id="@+id/iv_11"
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="15dp"
+                            android:src="@drawable/blue_circle_small"
+                            android:visibility="gone" />
+
+                        <RelativeLayout
+                            android:id="@+id/l_seats_create_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="45dp"
+                            android:layout_toRightOf="@+id/view1" >
+
+                            <TextView
+                                android:id="@+id/tv_6_create_list"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:fontFamily="fonts/AvenirLTStd_Book.otf"
+                                android:text="select seats"
+                                android:textAllCaps="true"
+                                android:textColor="#0087ca"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:visibility="gone" />
+
+                            <TextView
+                                android:id="@+id/tv_sec_seats"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tv_6_create_list"
+                                android:fontFamily="fonts/AvenirLTStd_Book.otf"
+                                android:text="Select Seats"
+                                android:textColor="#000000"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:id="@+id/imageView1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBottom="@+id/tv_sec_seats"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="40dp"
+                                android:src="@drawable/drop_down" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/dgdf"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:id="@+id/dgdf"
+                        android:layout_width="fill_parent"
+                        android:layout_height="65dp"
+                        android:paddingLeft="15dp" >
+
+                        <View
+                            android:id="@+id/view1"
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignBottom="@+id/view2"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="20dp"
+                            android:background="#ededed" />
+
+                        <View
+                            android:id="@+id/view2"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignLeft="@+id/l_departure_create_list"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginRight="20dp"
+                            android:background="#ededed" />
+
+                        <ImageView
+                            android:id="@+id/iv_012"
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="25dp"
+                            android:src="@drawable/grey_circle" />
+
+                        <ImageView
+                            android:id="@+id/iv_12"
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="15dp"
+                            android:src="@drawable/blue_circle_small"
+                            android:visibility="gone" />
+
+                        <RelativeLayout
+                            android:id="@+id/l_departure_create_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="45dp"
+                            android:layout_toRightOf="@+id/view1" >
+
+                            <TextView
+                                android:id="@+id/tv_7_create_list"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:fontFamily="fonts/AvenirLTStd_Book.otf"
+                                android:text="select departure"
+                                android:textAllCaps="true"
+                                android:textColor="#0087ca"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:visibility="gone" />
+
+                            <TextView
+                                android:id="@+id/tv_sec_departure"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tv_7_create_list"
+                                android:fontFamily="fonts/AvenirLTStd_Book.otf"
+                                android:gravity="center_vertical"
+                                android:text="Select Departure"
+                                android:textColor="#000000"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:id="@+id/imageView1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBottom="@+id/tv_sec_departure"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="40dp"
+                                android:src="@drawable/drop_down" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/dgdf"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:id="@+id/dgdf"
+                        android:layout_width="fill_parent"
+                        android:layout_height="65dp"
+                        android:paddingLeft="15dp" >
+
+                        <View
+                            android:id="@+id/view1"
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignBottom="@+id/view2"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="20dp"
+                            android:background="#ededed" />
+
+                        <View
+                            android:id="@+id/view2"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignLeft="@+id/l_return_create_list"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginRight="20dp"
+                            android:background="#ededed" />
+
+                        <ImageView
+                            android:id="@+id/iv_013"
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="25dp"
+                            android:src="@drawable/grey_circle" />
+
+                        <ImageView
+                            android:id="@+id/iv_13"
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="15dp"
+                            android:src="@drawable/blue_circle_small"
+                            android:visibility="gone" />
+
+                        <RelativeLayout
+                            android:id="@+id/l_return_create_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="45dp"
+                            android:layout_toRightOf="@+id/view1" >
+
+                            <TextView
+                                android:id="@+id/tv_8_create_list"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:fontFamily="fonts/AvenirLTStd_Book.otf"
+                                android:text="select return"
+                                android:textAllCaps="true"
+                                android:textColor="#0087ca"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:visibility="gone" />
+
+                            <TextView
+                                android:id="@+id/tv_sec_return"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tv_8_create_list"
+                                android:fontFamily="fonts/AvenirLTStd_Book.otf"
+                                android:gravity="center_vertical"
+                                android:text="Select Return"
+                                android:textColor="#000000"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:id="@+id/imageView1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBottom="@+id/tv_sec_return"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="40dp"
+                                android:src="@drawable/drop_down" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/dgdf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff" >
+
+                    <View
+                        android:id="@+id/view1"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:background="#ededed"
+                        android:layout_alignParentLeft="true" />
+
+                    <Button
+                        android:id="@+id/b_company_register"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginLeft="55dp"
+                        android:layout_marginRight="55dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_alignParentLeft="true"
+                        android:background="@drawable/bbutton"
+                        android:fontFamily="fonts/Znikomit.otf"
+                        android:text="CREATE"
+                        android:textColor="#ffffff"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

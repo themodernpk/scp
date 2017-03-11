@@ -1,0 +1,214 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/item_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/ll_1_listings_messages"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="45dp"
+                android:background="#ededed" />
+
+            <ImageView
+                android:id="@+id/iv_message_indicator_my_messages"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/blue_outline" />
+
+            <ImageView
+                android:id="@+id/iv_user_image_my_messages"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginLeft="37.5dp"
+                android:layout_marginTop="33dp"
+                android:layout_toRightOf="@+id/iv_message_indicator_my_messages" />
+
+            <ImageView
+                android:id="@+id/iv_user_image_my_messages_gravatar"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginLeft="37.5dp"
+                android:layout_marginTop="33dp"
+                android:layout_toRightOf="@+id/iv_message_indicator_my_messages"
+                android:layerType="software" />
+
+            <LinearLayout
+                android:id="@+id/ll_1_listings_messages"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22.5dp"
+                android:layout_marginRight="60dp"
+                android:layout_marginTop="22.5dp"
+                android:layout_toRightOf="@+id/iv_user_image_my_messages"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="User Name"
+                    android:textColor="#000000"
+                    android:textSize="27sp" />
+
+                <LinearLayout
+                    android:id="@+id/ll_2_upper"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="9dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1234567890"
+                        android:textColor="#15cd9f"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="  *  "
+                        android:textColor="#15cd9f"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="abc@gmail.com"
+                        android:textColor="#15cd9f"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="9dp"
+                    android:text="http://localhost/phpmyadmin/#PMAURL-2:db_export.php?db=search_carpools&amp;table=&amp;server=1&amp;target=&amp;token=22b1e9b9751f1ac972e95d7e28a30ec7"
+                    android:textColor="#cacaca"
+                    android:textSize="21sp" />
+
+                <LinearLayout
+                    android:id="@+id/ll_tick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/group_name"
+                    android:layout_marginTop="9dp"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="28 Oct 2015"
+                        android:textColor="#8dbee1"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_tick"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="7.5dp"
+                        android:adjustViewBounds="true"
+                        android:layerType="software" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_watch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/group_name"
+                    android:layout_marginTop="9dp"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_date1234"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Posting On"
+                        android:textColor="#8dbee1"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_watch"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="7.5dp"
+                        android:adjustViewBounds="true"
+                        android:layerType="software" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_bottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:id="@+id/ll_reply"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/button_listing"
+                        android:gravity="center"
+                        android:padding="7.5dp" >
+
+                        <ImageView
+                            android:id="@+id/iv_reply_my_messages"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/reply"
+                            android:focusable="false" />
+                    </LinearLayout>
+
+                    <!-- <LinearLayout -->
+                    <!-- android:id="@+id/ll_delete" -->
+                    <!-- android:layout_width="wrap_content" -->
+                    <!-- android:layout_height="wrap_content" -->
+                    <!-- android:layout_marginLeft="15dp" -->
+                    <!-- android:background="@drawable/green_circle_border" -->
+                    <!-- android:gravity="center" -->
+                    <!-- android:padding="7.5dp" > -->
+
+
+                    <!-- <ImageView -->
+                    <!-- android:id="@+id/iv_delete_my_messages" -->
+                    <!-- android:layout_width="wrap_content" -->
+                    <!-- android:layout_height="wrap_content" -->
+                    <!-- android:background="@drawable/delete" -->
+                    <!-- android:focusable="false" /> -->
+                    <!-- </LinearLayout> -->
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

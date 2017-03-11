@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_group"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ececec"
+    android:gravity="center_vertical" >
+
+    <View
+        android:id="@+id/view_listings_header_top"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentTop="true"
+        android:background="#ececec" />
+
+    <View
+        android:id="@+id/view_listings_header_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/group_name"
+        android:layout_marginTop="30dp"
+        android:background="#FFFFFF" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/view_listings_header_bottom"
+        android:layout_alignTop="@+id/view_listings_header_top"
+        android:layout_marginLeft="45dp"
+        android:background="#e0e0e0" />
+
+    <RelativeLayout
+        android:id="@+id/rl_arrow"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="22.5dp"
+        android:layout_marginTop="22.5dp"
+        android:background="@drawable/white_circle"
+        android:gravity="center_horizontal|center_vertical" >
+
+        <ImageView
+            android:id="@+id/iv_my_listings_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/group_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/rl_arrow"
+        android:layout_marginLeft="22.5dp"
+        android:layout_marginRight="22.5dp"
+        android:layout_toRightOf="@+id/rl_arrow"
+        android:text="aa"
+        android:textAllCaps="true"
+        android:textColor="#313131"
+        android:textSize="27sp" />
+
+    <TextView
+        android:id="@+id/group_date1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/group_name"
+        android:layout_marginRight="7.5dp"
+        android:layout_toLeftOf="@+id/ll_tick"
+        android:text="Posted On"
+        android:textColor="#979799"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:id="@+id/ll_tick"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/group_name"
+        android:layout_marginRight="22.5dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/group_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/group_name"
+            android:layout_marginRight="7.5dp"
+            android:text="09/12/2015"
+            android:textColor="#6aa9d4"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/iv_tick"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:layerType="software" />
+
+        <ImageView
+            android:id="@+id/iv_watch"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:layerType="software" />
+    </LinearLayout>
+
+</RelativeLayout>

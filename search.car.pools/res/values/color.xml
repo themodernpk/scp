@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <item name="tab_color" type="color">#96c1e2</item>
+        
+        <color name="swipe_color">#0087ca</color>
+        
+        <color name="white">#FFF</color>
+    <color name="grey">#6E6E6E</color>
+<!--     <color name="transparent">#00000000</color> -->
+<!--     <color name="sliding_menu_bg">#BF666666</color> -->
+<!--     <color name="facebook">#3b5999</color> -->
+<!--     <color name="twitter">#01bbf6</color> -->
+<!--     <color name="share">#5b9139</color> -->
+<!--     <color name="list_selector">#BF424242</color> -->
+<!--     <color name="facebook_pressed">#4a6eba</color> -->
+<!--     <color name="twitter_pressed">#66ccff</color> -->
+<!--     <color name="share_pressed">#6cac44</color> -->
+<!--     <color name="white_smoke">#F7F7F7</color> -->
+<!--     <color name="transparent">#00000000</color> -->
+<!--     <color name="main_color_green">#00b863</color> -->
+<!--     <color name="main_color_gray_dk">#3b3b3b</color> -->
+<!--     <color name="main_color_gray_lt">#acacac</color> -->
+<!--     <color name="main_color_gray">#7d7d7d</color> -->
+<!--     <color name="gray_light">#e8e8e8</color> -->
+</resources>

@@ -1,0 +1,750 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.example.search.car.pools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/l_company_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/layout_search"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal"
+        android:padding="1dp"
+        android:weightSum="10" >
+
+        <EditText
+            android:id="@+id/et_company_name_search"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_centerInParent="true"
+            android:layout_weight="8"
+            android:background="@drawable/search_company"
+            android:ellipsize="start"
+            
+            android:hint="Search your company"
+            android:imeOptions="actionDone"
+            android:paddingLeft="10dp"
+            android:textColor="#fff"
+            android:textColorHint="#737377"
+            android:textCursorDrawable="@drawable/cursor_color" />
+
+        <LinearLayout
+            android:id="@+id/l_search"
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/l_company_name"
+            android:layout_weight="2"
+            android:background="@drawable/bbutton_search"
+            android:gravity="center_vertical|center_horizontal" >
+
+            <ImageView
+                android:id="@+id/b_find_company"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerHorizontal="true"
+                android:adjustViewBounds="true"
+                android:layerType="software" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp" />
+
+    <!-- <android.support.v4.widget.SwipeRefreshLayout -->
+    <!-- xmlns:android="http://schemas.android.com/apk/res/android" -->
+    <!-- android:id="@+id/swipe_refresh_layout" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="wrap_content" > -->
+
+
+    <!-- </android.support.v4.widget.SwipeRefreshLayout> -->
+
+    <ListView
+        android:id="@+id/list_cities"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/l_company_name"
+        android:layout_marginTop="20dp" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/tv_internet_status"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/l_company_name"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="20dp"
+        android:background="#FFA500"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:text="Server not reachable"
+        android:textColor="#ffffff"
+        android:textSize="16sp" >
+    </TextView>
+
+    <ImageView
+        android:id="@+id/iv_logo_watermark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/l_company_name"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="50dp"
+        android:adjustViewBounds="true"
+        android:layerType="software" />
+
+    <LinearLayout
+        android:id="@+id/l_no_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/l_company_name"
+        android:layout_marginTop="20dp"
+        android:background="#00000000"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_no_result1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="No result found, please"
+            android:textColor="#95959a"
+            android:textSize="14sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_no_result2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text=" add this company"
+            android:textColor="#0087ca"
+            android:textSize="14sp" >
+        </TextView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_add_company"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/l_no_result" >
+
+        <LinearLayout
+            android:id="@+id/l_search_1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:orientation="vertical" >
+
+            <!-- <TextView -->
+            <!-- android:id="@+id/et_sec_city" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_gravity="center_horizontal" -->
+            <!-- android:layout_marginBottom="10dp" -->
+            <!-- android:layout_marginTop="5dp" -->
+            <!-- android:fontFamily="fonts/AvenirLTStd_Book.otf" -->
+            <!-- android:gravity="center" -->
+            <!-- android:text="Add Your Company" -->
+            <!-- android:textColor="#27272f" -->
+            <!-- android:textSize="20sp" -->
+            <!-- android:textStyle="bold" /> -->
+
+            <View
+                android:id="@+id/viewTop"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="15dp"
+                android:background="#e9e9e9" />
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp" >
+
+                <LinearLayout
+                    android:id="@+id/scroll_l"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/dgdf"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <RelativeLayout
+                            android:id="@+id/dgdf"
+                            android:layout_width="fill_parent"
+                            android:layout_height="60dp"
+                            android:paddingLeft="15dp" >
+
+                            <View
+                                android:id="@+id/view1"
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:layout_alignBottom="@+id/view2"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginLeft="20dp"
+                                android:background="#ededed" />
+
+                            <View
+                                android:id="@+id/view2"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_alignLeft="@+id/fl1"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginRight="20dp"
+                                android:background="#ededed" />
+
+                            <ImageView
+                                android:id="@+id/iv_01"
+                                android:layout_width="10dp"
+                                android:layout_height="10dp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="20dp"
+                                android:src="@drawable/blue_circle_small"
+                                android:visibility="gone" />
+
+                            <ImageView
+                                android:id="@+id/iv_1"
+                                android:layout_width="10dp"
+                                android:layout_height="10dp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="35dp"
+                                android:src="@drawable/grey_circle" />
+
+                            <com.example.search.car.pools.FloatLabelLayout
+                                android:id="@+id/fl1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="35dp"
+                                android:layout_marginRight="20dp"
+                                android:layout_marginTop="15dp"
+                                android:layout_toRightOf="@+id/iv_1"
+                                app:floatLabelTextAppearance="@style/TextAppearance.FLL.FloatLabel.BlueTextSearch" >
+
+                                <EditText
+                                    android:id="@+id/et_company_name"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="35dp"
+                                    android:background="#00000000"
+                                    android:hint="Company Name"
+                                    android:inputType="textCapWords"
+                                    android:paddingLeft="2.5dp"
+                                    android:textColor="#27272f"
+                                    android:textCursorDrawable="@drawable/cursor_color"
+                                    android:textSize="16sp" />
+                            </com.example.search.car.pools.FloatLabelLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/dgdf"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <RelativeLayout
+                            android:id="@+id/dgdf"
+                            android:layout_width="fill_parent"
+                            android:layout_height="60dp"
+                            android:paddingLeft="15dp" >
+
+                            <View
+                                android:id="@+id/view1"
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:layout_alignBottom="@+id/view2"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginLeft="20dp"
+                                android:background="#ededed" />
+
+                            <View
+                                android:id="@+id/view2"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_alignLeft="@+id/fl1"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginRight="20dp"
+                                android:background="#ededed" />
+
+                            <ImageView
+                                android:id="@+id/iv_02"
+                                android:layout_width="10dp"
+                                android:layout_height="10dp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="20dp"
+                                android:src="@drawable/blue_circle_small"
+                                android:visibility="gone" />
+
+                            <ImageView
+                                android:id="@+id/iv_2"
+                                android:layout_width="10dp"
+                                android:layout_height="10dp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="35dp"
+                                android:src="@drawable/grey_circle" />
+
+                            <com.example.search.car.pools.FloatLabelLayout
+                                android:id="@+id/fl1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="35dp"
+                                android:layout_marginRight="20dp"
+                                android:layout_marginTop="15dp"
+                                android:layout_toRightOf="@+id/iv_2"
+                                app:floatLabelTextAppearance="@style/TextAppearance.FLL.FloatLabel.BlueTextSearch" >
+
+                                <EditText
+                                    android:id="@+id/et_company_address"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="35dp"
+                                    android:background="#00000000"
+                                    android:hint="Company Address"
+                                    android:inputType="textPostalAddress"
+                                    android:paddingLeft="2.5dp"
+                                    android:textColor="#27272f"
+                                    android:textCursorDrawable="@drawable/cursor_color"
+                                    android:textSize="16sp" />
+                            </com.example.search.car.pools.FloatLabelLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/dgdf"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <RelativeLayout
+                            android:id="@+id/dgdf"
+                            android:layout_width="fill_parent"
+                            android:layout_height="60dp"
+                            android:paddingLeft="15dp" >
+
+                            <View
+                                android:id="@+id/view1"
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:layout_alignBottom="@+id/view2"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginLeft="20dp"
+                                android:background="#ededed" />
+
+                            <View
+                                android:id="@+id/view2"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginLeft="40dp"
+                                android:layout_marginRight="20dp"
+                                android:layout_toRightOf="@+id/view1"
+                                android:background="#ededed" />
+
+                            <ImageView
+                                android:id="@+id/iv_3"
+                                android:layout_width="10dp"
+                                android:layout_height="10dp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="15dp"
+                                android:src="@drawable/blue_circle_small"
+                                android:visibility="gone" />
+
+                            <ImageView
+                                android:id="@+id/iv_4"
+                                android:layout_width="10dp"
+                                android:layout_height="10dp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="25dp"
+                                android:src="@drawable/grey_circle" />
+
+                            <RelativeLayout
+                                android:id="@+id/l_city_create_list"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="40dp"
+                                android:layout_toRightOf="@+id/view1" >
+
+                                <TextView
+                                    android:id="@+id/tv_2_create_list"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="fonts/AvenirLTStd_Book.otf"
+                                    android:text="Selected City"
+                                    android:textColor="#0087ca"
+                                    android:textSize="13sp"
+                                    android:textStyle="bold"
+                                    android:visibility="gone" />
+
+                                <TextView
+                                    android:id="@+id/sp_sec_city"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/tv_2_create_list"
+                                    android:text="Select City"
+                                    android:textColor="#27272f"
+                                    android:textSize="16sp" />
+
+                                <ImageView
+                                    android:id="@+id/imageView1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignBottom="@+id/tv_c_sec_city"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginRight="40dp"
+                                    android:src="@drawable/drop_down" />
+                            </RelativeLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/dgdf"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <RelativeLayout
+                            android:id="@+id/dgdf"
+                            android:layout_width="fill_parent"
+                            android:layout_height="60dp"
+                            android:paddingLeft="15dp" >
+
+                            <View
+                                android:id="@+id/view1"
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:layout_alignBottom="@+id/view2"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginLeft="20dp"
+                                android:background="#ededed" />
+
+                            <View
+                                android:id="@+id/view2"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_alignLeft="@+id/fl1"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginRight="20dp"
+                                android:background="#ededed" />
+
+                            <ImageView
+                                android:id="@+id/iv_05"
+                                android:layout_width="10dp"
+                                android:layout_height="10dp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="20dp"
+                                android:src="@drawable/blue_circle_small"
+                                android:visibility="gone" />
+
+                            <ImageView
+                                android:id="@+id/iv_5"
+                                android:layout_width="10dp"
+                                android:layout_height="10dp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="35dp"
+                                android:src="@drawable/grey_circle" />
+
+                            <com.example.search.car.pools.FloatLabelLayout
+                                android:id="@+id/fl1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="35dp"
+                                android:layout_marginRight="20dp"
+                                android:layout_marginTop="15dp"
+                                android:layout_toRightOf="@+id/iv_5"
+                                app:floatLabelTextAppearance="@style/TextAppearance.FLL.FloatLabel.BlueTextSearch" >
+
+                                <EditText
+                                    android:id="@+id/et_your_name"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="35dp"
+                                    android:background="#00000000"
+                                    android:hint="Name"
+                                    android:inputType="textPersonName|textCapWords"
+                                    android:paddingLeft="2.5dp"
+                                    android:textColor="#27272f"
+                                    android:textCursorDrawable="@drawable/cursor_color"
+                                    android:textSize="16sp" />
+                            </com.example.search.car.pools.FloatLabelLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/dgdf"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <RelativeLayout
+                            android:id="@+id/dgdf"
+                            android:layout_width="fill_parent"
+                            android:layout_height="60dp"
+                            android:paddingLeft="15dp" >
+
+                            <View
+                                android:id="@+id/view1"
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:layout_alignBottom="@+id/view2"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginLeft="20dp"
+                                android:background="#ededed" />
+
+                            <View
+                                android:id="@+id/view2"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_alignLeft="@+id/fl1"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginRight="20dp"
+                                android:background="#ededed" />
+
+                            <ImageView
+                                android:id="@+id/iv_06"
+                                android:layout_width="10dp"
+                                android:layout_height="10dp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="20dp"
+                                android:src="@drawable/blue_circle_small"
+                                android:visibility="gone" />
+
+                            <ImageView
+                                android:id="@+id/iv_6"
+                                android:layout_width="10dp"
+                                android:layout_height="10dp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="35dp"
+                                android:src="@drawable/grey_circle" />
+
+                            <com.example.search.car.pools.FloatLabelLayout
+                                android:id="@+id/fl1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="35dp"
+                                android:layout_marginRight="20dp"
+                                android:layout_marginTop="15dp"
+                                android:layout_toRightOf="@+id/iv_6"
+                                app:floatLabelTextAppearance="@style/TextAppearance.FLL.FloatLabel.BlueTextSearch" >
+
+                                <EditText
+                                    android:id="@+id/et_offical_email"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="35dp"
+                                    android:background="#00000000"
+                                    android:hint="Official Email"
+                                    android:inputType="textEmailAddress"
+                                    android:paddingLeft="2.5dp"
+                                    android:textColor="#27272f"
+                                    android:textCursorDrawable="@drawable/cursor_color"
+                                    android:textSize="16sp" />
+                            </com.example.search.car.pools.FloatLabelLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/dgdf"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <RelativeLayout
+                            android:id="@+id/dgdf"
+                            android:layout_width="fill_parent"
+                            android:layout_height="60dp"
+                            android:paddingLeft="15dp" >
+
+                            <View
+                                android:id="@+id/view1"
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:layout_alignBottom="@+id/view2"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginLeft="20dp"
+                                android:background="#ededed" />
+
+                            <View
+                                android:id="@+id/view2"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_alignLeft="@+id/fl1"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginRight="20dp"
+                                android:background="#ededed" />
+
+                            <ImageView
+                                android:id="@+id/iv_07"
+                                android:layout_width="10dp"
+                                android:layout_height="10dp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="20dp"
+                                android:src="@drawable/blue_circle_small"
+                                android:visibility="gone" />
+
+                            <ImageView
+                                android:id="@+id/iv_7"
+                                android:layout_width="10dp"
+                                android:layout_height="10dp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="35dp"
+                                android:src="@drawable/grey_circle" />
+
+                            <com.example.search.car.pools.FloatLabelLayout
+                                android:id="@+id/fl1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="35dp"
+                                android:layout_marginRight="20dp"
+                                android:layout_marginTop="15dp"
+                                android:layout_toRightOf="@+id/iv_7"
+                                app:floatLabelTextAppearance="@style/TextAppearance.FLL.FloatLabel.BlueTextSearch" >
+
+                                <EditText
+                                    android:id="@+id/et_contact_number"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="35dp"
+                                    android:background="#00000000"
+                                    android:hint="Contact Number"
+                                    android:inputType="number"
+                                    android:paddingLeft="2.5dp"
+                                    android:textColor="#27272f"
+                                    android:textCursorDrawable="@drawable/cursor_color"
+                                    android:textSize="16sp" />
+                            </com.example.search.car.pools.FloatLabelLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/dgdf"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <RelativeLayout
+                            android:id="@+id/dgdf"
+                            android:layout_width="fill_parent"
+                            android:layout_height="60dp"
+                            android:paddingLeft="15dp" >
+
+                            <View
+                                android:id="@+id/view1"
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:layout_alignBottom="@+id/view2"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginLeft="20dp"
+                                android:background="#ededed" />
+
+                            <View
+                                android:id="@+id/view2"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_alignLeft="@+id/fl1"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginRight="20dp"
+                                android:background="#ededed" />
+
+                            <ImageView
+                                android:id="@+id/iv_08"
+                                android:layout_width="10dp"
+                                android:layout_height="10dp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="20dp"
+                                android:src="@drawable/blue_circle_small"
+                                android:visibility="gone" />
+
+                            <ImageView
+                                android:id="@+id/iv_8"
+                                android:layout_width="10dp"
+                                android:layout_height="10dp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="35dp"
+                                android:src="@drawable/grey_circle" />
+
+                            <com.example.search.car.pools.FloatLabelLayout
+                                android:id="@+id/fl1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="35dp"
+                                android:layout_marginRight="20dp"
+                                android:layout_marginTop="15dp"
+                                android:layout_toRightOf="@+id/iv_8"
+                                app:floatLabelTextAppearance="@style/TextAppearance.FLL.FloatLabel.BlueTextSearch" >
+
+                                <EditText
+                                    android:id="@+id/et_designation"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="35dp"
+                                    android:background="#00000000"
+                                    android:hint="Designation"
+                                    android:imeOptions="actionDone"
+                                    android:inputType="textCapWords"
+                                    android:paddingLeft="2.5dp"
+                                    android:textColor="#27272f"
+                                    android:textCursorDrawable="@drawable/cursor_color"
+                                    android:textSize="16sp" />
+                            </com.example.search.car.pools.FloatLabelLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/dgdf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff" >
+
+                        <View
+                            android:id="@+id/view1"
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="20dp"
+                            android:background="#ededed" />
+
+                        <Button
+                            android:id="@+id/b_company_register"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_gravity="center_vertical|center_horizontal"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginLeft="55dp"
+                            android:layout_marginRight="55dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/bbutton"
+                            android:fontFamily="fonts/Znikomit.otf"
+                            android:text="CREATE"
+                            android:textColor="#ffffff"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

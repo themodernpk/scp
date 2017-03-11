@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/car_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0087ca"
+    tools:context="com.example.search.car.pools.MainAnimation" >
+
+    <ImageView
+        android:id="@+id/main_anim_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:adjustViewBounds="true"
+        android:layerType="software"
+        android:scaleType="centerCrop" />
+    
+    <ImageView
+        android:id="@+id/main_anim_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:adjustViewBounds="true"
+        android:layerType="software"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/main_anim_carpooling"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_anim_background"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:adjustViewBounds="true"
+        android:layerType="software"
+        android:scaleType="centerCrop"  />
+    
+    <ImageView
+        android:id="@+id/main_anim_happy"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/main_anim_background"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:adjustViewBounds="true"
+        android:layerType="software"
+        android:scaleType="centerCrop"  />
+
+     <ImageView
+         android:id="@+id/main_anim_left_cloud"
+         android:layout_width="120dp"
+         android:layout_height="wrap_content"
+         android:layout_alignBottom="@+id/main_anim_happy"
+         android:layout_toLeftOf="@+id/main_anim_happy"
+         android:adjustViewBounds="true"
+         android:layerType="software"
+         android:scaleType="centerCrop" />
+
+     <ImageView
+         android:id="@+id/main_anim_right_cloud"
+         android:layout_width="80dp"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/main_anim_happy"
+         android:layout_toRightOf="@+id/main_anim_carpooling"
+         android:adjustViewBounds="true"
+         android:layerType="software"
+         android:scaleType="centerCrop" />
+
+     <ImageView
+         android:id="@+id/main_anim_car"
+         android:layout_width="200dp"
+         android:layout_height="wrap_content"
+         android:layout_alignBottom="@+id/main_anim_background"
+         android:layout_alignLeft="@+id/main_anim_background"
+         android:adjustViewBounds="true"
+         android:layerType="software"
+         android:layout_marginBottom="10dp"
+         android:scaleType="centerCrop" />
+
+<!--      <ImageView -->
+<!--          android:id="@+id/main_anim_logo_buddy_left" -->
+<!--          android:layout_width="10dp" -->
+<!--          android:layout_height="wrap_content" -->
+<!--          android:layout_toLeftOf="@+id/main_anim_logo_buddy_mid" -->
+<!--          android:layout_alignTop="@+id/main_anim_logo" -->
+<!--          android:adjustViewBounds="true" -->
+<!--          android:layerType="software" -->
+<!--          android:scaleType="centerCrop" /> -->
+
+<!--      <ImageView -->
+<!--          android:id="@+id/main_anim_logo_buddy_mid" -->
+<!--          android:layout_width="10dp" -->
+<!--          android:layout_height="wrap_content" -->
+<!--          android:layout_alignTop="@+id/main_anim_logo" -->
+<!--          android:adjustViewBounds="true" -->
+<!--          android:layout_toLeftOf="@+id/main_anim_logo_buddy_right" -->
+<!--          android:layerType="software" -->
+<!--          android:scaleType="centerCrop" /> -->
+
+<!--      <ImageView -->
+<!--          android:id="@+id/main_anim_logo_buddy_right" -->
+<!--          android:layout_width="10dp" -->
+<!--          android:layout_height="wrap_content" -->
+<!--          android:layout_alignParentRight="true" -->
+<!--          android:layout_marginRight="80dp" -->
+<!--          android:layout_alignTop="@+id/main_anim_logo" -->
+<!--          android:adjustViewBounds="true" -->
+<!--          android:layerType="software" -->
+<!--          android:scaleType="centerCrop" /> -->
+     
+</RelativeLayout>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF" >
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="25dp"
+        android:background="#ededed" />
+
+    <ImageView
+        android:id="@+id/iv_message_indicator_my_messages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="19.5dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/grey_outline" />
+
+    <ImageView
+        android:id="@+id/iv_user_image_my_messages"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="22dp"
+        android:layout_toRightOf="@+id/iv_message_indicator_my_messages" />
+
+    <LinearLayout
+        android:id="@+id/ll_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="22dp"
+        android:layout_toRightOf="@+id/iv_user_image_my_messages"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_username_my_messages"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Name"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/ll_upper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_phone_my_messages"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1234567890"
+                android:textColor="#15cd9f"
+                android:textSize="12sp"
+                 />
+
+            <TextView
+                android:id="@+id/tv_email_my_messages"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="abc@gmail.com"
+                android:textColor="#15cd9f"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_message_my_messages"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="http://localhost/phpmyadmin/#PMAURL-2:db_export.php?db=search_carpools&amp;table=&amp;server=1&amp;target=&amp;token=22b1e9b9751f1ac972e95d7e28a30ec7"
+            android:textColor="#cacaca"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_date_my_messages"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="28 Oct 2015"
+            android:textColor="#8dbee1"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:id="@+id/ll_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/ll_reply"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/green_circle_border"
+                android:gravity="center"
+                android:padding="5dp" >
+
+                <ImageView
+                    android:id="@+id/iv_reply_my_messages"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/reply"
+                    android:focusable="false" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/green_circle_border"
+                android:gravity="center"
+                android:padding="5dp" >
+
+                <ImageView
+                    android:id="@+id/iv_delete_my_messages"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/delete"
+                    android:focusable="false" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_add_minus_my_messages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/add"
+        android:focusable="false" />
+
+</RelativeLayout>

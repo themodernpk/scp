@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="#0087ca"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/l1_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/l_navigation_back"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/ib_navigation_back"
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:layout_centerVertical="true"
+                android:adjustViewBounds="true"
+                android:background="#00000000"
+                android:layerType="software"
+                android:scaleType="centerCrop" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/l_navigation_handle"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/ib_navigation_handle"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:adjustViewBounds="true"
+                android:background="#00000000"
+                android:layerType="software"
+                android:scaleType="centerCrop" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l_navigation_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/l1_back"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/ib_navigation_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:background="#00000000"
+            android:layerType="software"
+            android:scaleType="centerCrop" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l2_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/l_navigation_search"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/ib_navigation_search"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/ib_navigation_menu"
+                android:adjustViewBounds="true"
+                android:background="#00000000"
+                android:layerType="software"
+                android:scaleType="centerCrop" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/l_navigation_menu"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/ib_navigation_menu"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:adjustViewBounds="true"
+                android:background="#00000000"
+                android:layerType="software"
+                android:scaleType="centerCrop"
+                 />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

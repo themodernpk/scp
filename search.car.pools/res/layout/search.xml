@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:floatlabel="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res/com.example.search.car.pools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0087ca"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:id="@+id/l_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/l_search_1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rounded_border"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_looking_for"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="AvenirLTStd_Book.otf"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="I AM LOOKING FOR"
+                    android:textColor="#00ca98"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <View
+                    android:id="@+id/view_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#f0f0f1"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/dgdf"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#ffffff"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/sp_sec_city"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_margin="2.5dp"
+                        android:layout_weight="90"
+                        android:fontFamily="AvenirLTStd_Book.otf"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="5dp"
+                        android:text="Select City"
+                        android:textColor="#919195"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_city"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="10"
+                        android:src="@drawable/drop_down" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#f0f0f1" />
+
+                <ScrollView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <LinearLayout
+                        android:id="@+id/scroll_l"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:id="@+id/dgd"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="10dp"
+                            android:background="#ffffff"
+                            android:orientation="vertical" >
+
+                            <com.example.search.car.pools.FloatLabelLayout
+                                android:id="@+id/fl1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:floatLabelTextAppearance="@style/TextAppearance.FLL.FloatLabel.Grey" >
+
+                                <EditText
+                                    android:id="@+id/et_search_from"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="35dp"
+                                    android:layout_margin="2.5dp"
+                                    android:background="#00000000"
+                                    android:fontFamily="AvenirLTStd_Book.otf"
+                                    android:hint="From"
+                                    android:inputType="textPersonName|textCapWords"
+                                    android:paddingLeft="5dp"
+                                    android:textColor="#919195"
+                                    android:textColorHint="#d2d2d2"
+                                    android:textCursorDrawable="@drawable/cursor_color"
+                                    android:textSize="16sp" />
+                            </com.example.search.car.pools.FloatLabelLayout>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="5dp"
+                            android:background="#f0f0f1" />
+
+                        <LinearLayout
+                            android:id="@+id/dg"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="10dp"
+                            android:background="#ffffff"
+                            android:orientation="vertical" >
+
+                            <com.example.search.car.pools.FloatLabelLayout
+                                android:id="@+id/fl2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:floatLabelTextAppearance="@style/TextAppearance.FLL.FloatLabel.Grey" >
+
+                                <EditText
+                                    android:id="@+id/et_search_to"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="35dp"
+                                    android:layout_margin="2.5dp"
+                                    android:background="#00000000"
+                                    android:fontFamily="AvenirLTStd_Book.otf"
+                                    android:hint="To"
+                                    android:inputType="textPersonName|textCapWords"
+                                    android:paddingLeft="5dp"
+                                    android:textColor="#919195"
+                                    android:textColorHint="#d2d2d2"
+                                    android:textCursorDrawable="@drawable/cursor_color"
+                                    android:textSize="16sp" />
+                            </com.example.search.car.pools.FloatLabelLayout>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="5dp"
+                            android:background="#f0f0f1" />
+
+                        <LinearLayout
+                            android:id="@+id/ddf"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="22dp"
+                            android:layout_marginTop="10dp"
+                            android:background="#ffffff"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/sp_category"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_margin="2.5dp"
+                                android:layout_weight="90"
+                                android:fontFamily="AvenirLTStd_Book.otf"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="5dp"
+                                android:text="Select Category"
+                                android:textColor="#919195"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:id="@+id/iv_cat"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="10"
+                                android:src="@drawable/drop_down" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="5dp"
+                            android:background="#f0f0f1" />
+
+                        <LinearLayout
+                            android:id="@+id/gdf"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="22dp"
+                            android:layout_marginTop="10dp"
+                            android:background="#ffffff"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/sp_search_for"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_margin="2.5dp"
+                                android:layout_weight="90"
+                                android:fontFamily="AvenirLTStd_Book.otf"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="5dp"
+                                android:text="Search For"
+                                android:textColor="#919195"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:id="@+id/iv_search_for"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="10"
+                                android:src="@drawable/drop_down" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/b_search"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/l_search_1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bbutton"
+                android:fontFamily="AvenirLTStd_Book.otf"
+                android:hint="City"
+                android:text="Search"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/iv_close"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/blue_circle_small"
+                android:gravity="center_horizontal|center_vertical"
+                android:src="@drawable/close_blue"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/iv_close_bottom"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:src="@drawable/close" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
